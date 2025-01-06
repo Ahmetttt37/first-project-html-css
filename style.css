@@ -161,10 +161,42 @@ ul li:hover{
     display: flex;
     gap: 70px;
     padding: 120px 150px;
+
  }
  .hhjj img{
     width: 400px;
     height: 350px;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+
+
+ }
+ @keyframes anim1{
+    from{
+        transform: translatex(-600px);
+    }
+    to{
+        transform: translate(0px);
+    }
+ }
+ @keyframes anim2{
+    from{
+        transform: translatex(600px);
+    }
+    to{
+        transform: translate(0px);
+    }
+ }
+ .ff{
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+
  }
 .ff h1{
     width: 340px;
@@ -282,6 +314,12 @@ ul li:hover{
     width: 400px;
     height: 330px;
     box-shadow: 6px 5px 6px rgba(128, 128, 128, 0.388),-6px -5px 6px rgba(128, 128, 128, 0.301);
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+
 }
 .box0 h1{
     font-size: 1.8em;
@@ -316,5 +354,14 @@ ul li:hover{
     width: 400px;
     height: 330px;
     box-shadow: 6px 5px 6px rgba(128, 128, 128, 0.388),-6px -5px 6px rgba(128, 128, 128, 0.301);
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry;
+
+}
+html{
+    scroll-behavior: smooth;
 }
 
